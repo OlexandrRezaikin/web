@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична робота №1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Практична робота №1</h1>
+        <p>Освоєння HTML: Створення структури та таблиці розкладу</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">← На головну</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Розклад занять</h2>
+            <p>
+                Офіційний розклад ДУІКТ доступний 
+                <a href="https://e-rozklad.duikt.edu.ua/time-table/group?type=0" target="_blank">за цим посиланням</a>.
+            </p>
+
+            <table class="schedule">
+                <thead>
+                    <tr>
+                        <th>День</th>
+                        <th>Пара (Час)</th>
+                        <th>Дисципліна</th>
+                        <th>Тип</th>
+                        <th>Аудиторія</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Приклад навчального дня -->
+                    <tr>
+                        <td rowspan="2">Понеділок</td>
+                        <td>1 (08:30 – 10:05)</td>
+                        <td>Основи веб-технологій</td>
+                        <td>Лекція</td>
+                        <td>Ауд. 312</td>
+                    </tr>
+                    <tr>
+                        <td>2 (10:25 – 12:00)</td>
+                        <td>Основи веб-технологій</td>
+                        <td>Лабораторна</td>
+                        <td>Комп. клас 4</td>
+                    </tr>
+
+                    <tr>
+                        <td>Вівторок</td>
+                        <td>1 (08:30 – 10:05)</td>
+                        <td>Вища математика</td>
+                        <td>Практика</td>
+                        <td>Ауд. 205</td>
+                    </tr>
+
+                    <!-- Вихідні дні -->
+                    <tr class="weekend">
+                        <td colspan="5" style="text-align: center; font-weight: bold;">
+                            Субота та неділя — вихідні дні
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="pz1.html">Повернутися на головну</a></p>
+    
+    </footer>
+
+</body>
+</html>
